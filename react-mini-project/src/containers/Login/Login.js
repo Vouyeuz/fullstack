@@ -27,4 +27,4 @@ Login.propTypes = propTypes;
 // const mapDispatchToProps = {}
 
 // export default connect(mapStateToProps, mapDispatchToProps)(Login)
-export default Login
+export default Login;

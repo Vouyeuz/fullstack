@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
+import { PageHeader } from '../../components';
 // import { connect } from 'react-redux';
 
 export class Order extends Component {
@@ -11,7 +12,10 @@ export class Order extends Component {
 
   render() {
     return (
-      <div>Order</div>
+      <div>
+        <PageHeader />
+        <div>Order</div>
+      </div>
     )
   }
 }
@@ -27,4 +31,4 @@ Order.propTypes = propTypes;
 // const mapDispatchToProps = {}
 
 // export default connect(mapStateToProps, mapDispatchToProps)(Order)
-export default Order
+export default Order;

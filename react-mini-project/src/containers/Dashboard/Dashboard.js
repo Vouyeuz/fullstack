@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
+import { PageHeader } from '../../components';
 // import { connect } from 'react-redux';
 
 export class Dashboard extends Component {
@@ -11,7 +12,10 @@ export class Dashboard extends Component {
 
   render() {
     return (
-      <div>Dashboard</div>
+      <div>
+        <PageHeader />
+        <div>Dashboard</div>
+      </div>
     )
   }
 }
@@ -27,4 +31,4 @@ Dashboard.propTypes = propTypes;
 // const mapDispatchToProps = {}
 
 // export default connect(mapStateToProps, mapDispatchToProps)(Dashboard)
-export default Dashboard
+export default Dashboard;

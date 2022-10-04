@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
+import { PageHeader } from '../../components';
 // import { connect } from 'react-redux';
 
 export class MyProfile extends Component {
@@ -11,7 +12,10 @@ export class MyProfile extends Component {
 
   render() {
     return (
-      <div>MyProfile</div>
+      <div>
+        <PageHeader />
+        <div>MyProfile</div>
+      </div>
     )
   }
 }
@@ -27,4 +31,4 @@ MyProfile.propTypes = propTypes;
 // const mapDispatchToProps = {}
 
 // export default connect(mapStateToProps, mapDispatchToProps)(MyProfile)
-export default MyProfile
+export default MyProfile;

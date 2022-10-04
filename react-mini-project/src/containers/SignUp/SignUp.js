@@ -27,4 +27,4 @@ SignUp.propTypes = propTypes;
 // const mapDispatchToProps = {}
 
 // export default connect(mapStateToProps, mapDispatchToProps)(SignUp)
-export default SignUp
+export default SignUp;
