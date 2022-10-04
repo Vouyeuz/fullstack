@@ -1,32 +1,43 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Dashboard, Login, MyProfile, Order, SignUp } from './containers/index';
 
-function App(routes) {
+function App() {
   return (
-    <Router>
-      <AppContainer>
-        <Switch>
-          <Route exact path="/homepage">
-            {/* page header here */}
-            {/* home page here */}
-          </Route>
-          <Route exact path="/profile">
-            {/* page header here */}
-            {/* page profile here */}
-          </Route>
-          <Route exact path="/order">
-            {/* page header here */}
-            {/* page order here */}
-          </Route>
-          <Route exact path="/signup">
-            {/* sign up page here */}
-          </Route>
-          <Route exact path="/">
-            {/* login page here */}
-          </Route>
-        </Switch>
-      </AppContainer>
-    </Router>
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/homepage"
+          element={
+            <Dashboard id={'homepage'} />
+          }
+        />
+        <Route
+          path="/profile"
+          element={
+            <MyProfile id={'myProfile'} />
+          }
+        />
+        <Route
+          path="/order"
+          element={
+            <Order id={'order'} />
+          }
+        />
+        <Route
+          path="/signup"
+          element={
+            <SignUp id={'signUp'} />
+          }
+        />
+        <Route
+          path="/"
+          element={
+            <Login id={'login'} />
+          }
+        />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
